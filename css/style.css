@@ -1,0 +1,23 @@
+:root {
+    --sq-hght: 50px;
+    --sq-wdh: 50px;
+    --sq-bgc:black;
+    --sq-gd:repeat(8,10vh);
+    --sq-gp: 0px;
+
+}
+
+#chess_board {
+    display: grid;
+    grid-template-rows: var(--sq-gd);
+    grid-template-columns: var(--sq-gd);
+    gap: var(--sq-gp);
+
+
+}
+
+.square {
+    height: var(--sq-hght);
+    width: var(--sq-wdh);
+    background-color: var(--sq-bgc);
+}
