@@ -1,3 +1,2 @@
-import { fight } from "./modules/extrawork.js";
+import { PIECES } from "./modules/piecerepo.js";
 
-fight(1,2)

@@ -1,7 +1,8 @@
 :root {
     --sq-hght: 50px;
     --sq-wdh: 50px;
-    --sq-bgc:black;
+    --sq-bkch:black;
+    --sq--wtch: rgb(220, 247, 255);
     --sq-gd:repeat(8,10vh);
     --sq-gp: 0px;
 
@@ -19,5 +20,13 @@
 .square {
     height: var(--sq-hght);
     width: var(--sq-wdh);
-    background-color: var(--sq-bgc);
+    /* background-color: var(--sq-bgc); */
+}
+
+.square-black {
+    background-color: var(--sq-bkch);
+}
+
+.square-white {
+    background-color: var(--sq--wtch);
 }
