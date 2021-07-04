@@ -1,11 +1,11 @@
 export const BoardSetter = { 
-    createElem: function(src, parent){
-        let elem = document.createElement("img");
-        elem.setAttribute('src',src)
-        document.getElementById(parent).appendChild(elem)
+    createElem: function(src){
+        return document.createElement("img").setAttribute('src',src) 
     },
 
-     placePiece : function() {
-        
-    }
+     placePiece: function(src, parent) {
+        document.getElementById(parent).appendChild(this.createElem(src))
+    },
+
+    
 }
