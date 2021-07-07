@@ -1,4 +1,5 @@
 export const Board = {
+
     boardState: [
         [-5, -3, -3, -9, -10, -3, -3, -5],
         [-1, -1, -1, -1, -1, -1, -1, -1],
@@ -9,11 +10,11 @@ export const Board = {
         [1, 1, 1, 1, 1, 1, 1, 1],
         [5, 3, 3, 9, 10, 3, 3, 5]
     ],
-    
+
     reduceSpace(){
         let result = this.boardState.reduce(function(accum,list,firstIndex){
             accum.push(list.reduce(function(secaccu, item, secondIndex){
-                item === null ? secaccu.push([firstIndex, secondIndex]): -1
+                item === null ? secaccu.push([firstIndex, secondIndex]): null
                 return secaccu
             }, [])) 
             return accum
@@ -21,9 +22,11 @@ export const Board = {
         return result
     },
 
-    whosMove: function(piece){
-        switch(piece){
-            case 1:
-        }
+    checkViableMoves(){
+        
+    },
+
+    whosMove(piece){
+        
     }
 }
