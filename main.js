@@ -1,2 +1,4 @@
-import { PIECES } from "./modules/piecerepo.js";
+import { Board } from "./modules/chessboard.js";
 
+console.log(Board.boardState)
+console.log(Board.reduceSpace())
